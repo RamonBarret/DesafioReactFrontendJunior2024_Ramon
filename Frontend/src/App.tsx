@@ -1,9 +1,17 @@
-import '../src/styles/Main.css'
+import '../src/styles/Main.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
 
-export default function App() {
+const App: React.FC = () => {
   return (
-    <section>
-      <h1>Todos</h1>
-    </section>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
-}
+};
+
+export default App;
+
