@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { FaX } from "react-icons/fa6";
+
 interface Todo {
   id: number;
   title: string;
@@ -29,6 +31,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleCompletion, removeTodo,
   return (
     <li>
       <input
+        className='checktasks'
         type="checkbox"
         checked={todo.completed}
         onChange={() => toggleCompletion(todo.id)}
@@ -46,7 +49,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleCompletion, removeTodo,
           {todo.title}
         </span>
       )}
-      <button onClick={() => removeTodo(todo.id)}>Remove</button>
+      <button onClick={() => removeTodo(todo.id)}><FaX /></button>
     </li>
   );
 };

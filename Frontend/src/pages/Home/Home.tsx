@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import TodoList from '../../components/TodoList/TodoList';
 import TodoFilter from '../../components/TodoFilter/TodoFilter';
 
+import { FaAngleDown } from "react-icons/fa6";
+
+
 interface Todo {
   id: number;
   title: string;
@@ -79,28 +82,30 @@ const Home: React.FC = () => {
   const remainingTodos = todos.filter(todo => !todo.completed).length;
 
   return (
-    <div>
-      <h1>Todos</h1>
-      <input
-        className='addTaskName'
-        type="text"
-        placeholder="Add todo"
-        value={inputText}
-        onChange={handleInputChange}
-        onKeyPress={handleInputKeyPress}
-      />
-      <button className='addTask' onClick={addTodo}>Add</button>
-      <TodoList
-        todos={todos}
-        toggleCompletion={toggleTodoCompletion}
-        removeTodo={removeTodo}
-        editTodo={editTodo}
-      />
-      <div>
-        <span>{remainingTodos} item(s) left</span>
-        <button className='ToggleAllComplete' onClick={handleToggleAllComplete}>Toggle all completed</button>
-      </div>
-      <TodoFilter />
+    <div className='main'>
+      <div className='body'>
+        <h1>todos</h1>
+        <FaAngleDown />
+        <input
+          type="text"
+          placeholder="Add todo"
+          value={inputText}
+          onChange={handleInputChange}
+          onKeyPress={handleInputKeyPress}
+        />
+        <TodoList
+          todos={todos}
+          toggleCompletion={toggleTodoCompletion}
+          removeTodo={removeTodo}
+          editTodo={editTodo}
+        />
+        <div className='itens-information'>
+          <span>{remainingTodos} item(s) left</span>
+          <button onClick={handleToggleAllComplete}>Toggle all completed</button>
+        </div>
+        <TodoFilter />
+        </div>
+  
     </div>
   );
 };

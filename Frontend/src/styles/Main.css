@@ -1,0 +1,70 @@
+:root {
+    --color-white: #fff;
+    --color-lightgray: #F0F0F0;
+    --color-black: #1F2024;
+    --color-red: #8E1715;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    background-color: var(--color-lightgray);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 5rem;
+    margin-bottom: 10px;
+    color: var(--color-red);
+}
+
+input {
+    width: 420px;
+    height: 40px;
+    padding-left: 50px;
+}
+
+.itens-information {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 350px;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+}
+
+/* ícones - React-icons */
+svg {
+    font-size: 1.5em;
+}
+
+/* TodoList */
+ul {
+    background-color: var(--color-white);
+    width: 435px;
+    
+}
+
+/* TodoItem */
+li {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+li input .checktasks {
+    border: 50%;
+}
+
