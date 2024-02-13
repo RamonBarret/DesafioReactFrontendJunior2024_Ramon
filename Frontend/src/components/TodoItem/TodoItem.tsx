@@ -49,7 +49,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleCompletion, removeTodo,
           {todo.title}
         </span>
       )}
-      <button onClick={() => removeTodo(todo.id)}><FaX /></button>
+      <button className='remove' onClick={() => removeTodo(todo.id)}><FaX /></button>
     </li>
   );
 };
