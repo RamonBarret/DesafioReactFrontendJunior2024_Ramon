@@ -29,9 +29,8 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleCompletion, removeTodo,
   };
 
   return (
-    <li>
+    <li className='tasks-listed'>
       <input
-        className='checktasks'
         type="checkbox"
         checked={todo.completed}
         onChange={() => toggleCompletion(todo.id)}

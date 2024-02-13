@@ -43,7 +43,7 @@ h1 {
 .input-container input {
     width: 420px;
     height: 40px;
-    padding-left: 30px; 
+    padding-left: 30px;
 }
 
 
@@ -60,17 +60,28 @@ h1 {
 /* TodoList */
 ul {
     background-color: var(--color-white);
-    width: 452px;
-    
+    width: 450px;
+
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
 }
 
 /* TodoItem */
 li {
-    margin-top: 20px;
+    margin: 15px 0 15px 15px;
+    text-decoration: none;
     display: inline-block;
 }
 
-li input .checktasks {
-    border: 50%;
+li.tasks-listed input  {
+    margin-left: 5px;
+    margin-right: 20px;
 }
+
+li.tasks-listed button {
+    margin-left: 300px;
+}
+
+
 
