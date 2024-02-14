@@ -86,8 +86,8 @@ const Home: React.FC = () => {
   return (
     <div className='main'>
       <div className='body'>
-        <h1>todos</h1>
-        <div className='input-container'>
+        <h1 className='font-sans font-normal text-8xl mb-5 text-red-800 opacity-80'>todos</h1>
+        <div className='bg-background'>
           <button className='list_incomplete_tasks' onClick={() => setShowIncomplete(!showIncomplete)}><FaAngleDown /></button>
           <input
             type="text"

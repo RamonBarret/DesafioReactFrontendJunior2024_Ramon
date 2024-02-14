@@ -1,4 +1,4 @@
-import '../src/styles/Main.css';
+import '../src/styles/index.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
@@ -14,4 +14,5 @@ const App: React.FC = () => {
 };
 
 export default App;
+
 

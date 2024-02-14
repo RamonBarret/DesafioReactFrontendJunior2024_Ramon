@@ -1,8 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --color-white: #fff;
-    --color-lightgray: #F0F0F0;
-    --color-black: #1F2024;
-    --color-red: #8E1715;
+    --color-lightgray: #F5F5F5;
+    --color-lightgray2: #EDEDED;
+    --color-red: #B83F45;
 }
 * {
     margin: 0;
@@ -23,13 +27,6 @@
     align-items: center;
 }
 
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: lighter;
-    font-size: 5rem;
-    margin-bottom: 10px;
-    color: var(--color-red);
-}
 
 .input-container {
     position: relative;
