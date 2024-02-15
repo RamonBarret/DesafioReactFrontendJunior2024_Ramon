@@ -12,7 +12,6 @@ interface Todo {
 const Home: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [inputText, setInputText] = useState<string>('');
-  const [showIncomplete, setShowIncomplete] = useState<boolean>(false); 
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputText(event.target.value);
@@ -94,7 +93,7 @@ const Home: React.FC = () => {
   const remainingTodos = todos.filter(todo => !todo.completed).length;
 
   // Filtra os itens com base no estado showIncomplete
-  const filteredTodos = showIncomplete ? todos.filter(todo => !todo.completed) : todos;
+  const filteredTodos = todos;
 
   const hasCompleted = todos.some(todo => todo.completed); // Declarado aqui
 
