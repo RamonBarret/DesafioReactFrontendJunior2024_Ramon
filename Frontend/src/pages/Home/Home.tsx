@@ -68,6 +68,17 @@ const Home: React.FC = () => {
     );
   };
 
+  const handleToggleAllComplete = () => {
+    const allCompleted = todos.every(todo => todo.completed);
+    setTodos(
+      todos.map(todo => ({
+        ...todo,
+        completed: !allCompleted,
+      }))
+    );
+  }
+  
+
   const ClearTaskCompleted = () => {
     const hasCompleted = todos.some(todo => todo.completed);
     if (hasCompleted) {
@@ -92,7 +103,7 @@ const Home: React.FC = () => {
       <div className='flex flex-col items-center'>
         <h1 className='font-sans font-normal text-8xl mb-5 text-red-800 opacity-80'>todos</h1>
         <div className='input-container'>
-          <button onClick={() => setShowIncomplete(!showIncomplete)}>
+          <button onClick={handleToggleAllComplete}>
             <FaAngleDown />
           </button>
           <input
