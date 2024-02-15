@@ -68,14 +68,16 @@ const Home: React.FC = () => {
     );
   };
 
-  const handleToggleAllComplete = () => {
-    const allCompleted = todos.every(todo => todo.completed);
-    setTodos(
-      todos.map(todo => ({
+  const ClearTaskCompleted = () => {
+    const hasCompleted = todos.some(todo => todo.completed);
+    if (hasCompleted) {
+      setTodos(todos.filter(todo => !todo.completed));
+    } else {
+      setTodos(todos.map(todo => ({
         ...todo,
-        completed: !allCompleted,
-      }))
-    );
+        completed: true,
+      })));
+    }
   };
 
   const remainingTodos = todos.filter(todo => !todo.completed).length;
@@ -83,12 +85,16 @@ const Home: React.FC = () => {
   // Filtra os itens com base no estado showIncomplete
   const filteredTodos = showIncomplete ? todos.filter(todo => !todo.completed) : todos;
 
+  const hasCompleted = todos.some(todo => todo.completed); // Declarado aqui
+
   return (
-    <div className='main'>
-      <div className='body'>
+    <div className='bg-gray-100 w-full h-screen flex flex-col justify-center items-center'>
+      <div className='flex flex-col items-center'>
         <h1 className='font-sans font-normal text-8xl mb-5 text-red-800 opacity-80'>todos</h1>
-        <div className='bg-background'>
-          <button className='list_incomplete_tasks' onClick={() => setShowIncomplete(!showIncomplete)}><FaAngleDown /></button>
+        <div className='input-container'>
+          <button onClick={() => setShowIncomplete(!showIncomplete)}>
+            <FaAngleDown />
+          </button>
           <input
             type="text"
             placeholder="What needs to be done?"
@@ -97,18 +103,23 @@ const Home: React.FC = () => {
             onKeyPress={handleInputKeyPress}
           />
         </div>
+        {todos.length > 0 && (
+          <div className='bg-white flex flex-col items-start'>
+            <TodoList
+              todos={filteredTodos} 
+              toggleCompletion={toggleTodoCompletion}
+              removeTodo={removeTodo}
+              editTodo={editTodo}
+            />
+            <div className='flex flex-row items-start'>
+              <span className='ml-2 mr-5'>{remainingTodos} item(s) left</span>
+              <TodoFilter />
+              {hasCompleted && <button onClick={ClearTaskCompleted}>Clear Completed</button>}
+            </div>
+          </div>
+        )}
+
         
-        <TodoList
-          todos={filteredTodos} 
-          toggleCompletion={toggleTodoCompletion}
-          removeTodo={removeTodo}
-          editTodo={editTodo}
-        />
-        <div className='itens-information'>
-          <span>{remainingTodos} item(s) left</span>
-          <button onClick={handleToggleAllComplete}>Toggle all completed</button>
-        </div>
-        <TodoFilter />
       </div>
     </div>
   );

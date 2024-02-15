@@ -2,31 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --color-white: #fff;
-    --color-lightgray: #F5F5F5;
-    --color-lightgray2: #EDEDED;
-    --color-red: #B83F45;
-}
 * {
     margin: 0;
     padding: 0;
 }
-.main {
-    background-color: var(--color-lightgray);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 .input-container {
     position: relative;
@@ -36,49 +15,29 @@
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 20%;
 }
 .input-container input {
-    width: 420px;
-    height: 40px;
+    width: 480px;
+    height: 50px;
     padding-left: 30px;
+    border: 1px solid lightgray;
 }
 
 
-/* Itens abaixo do input Todos */
-.itens-information {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    width: 350px;
-    margin-top: 10px; 
-    margin-bottom: 20px;
-}
+/* TodoItem */ 
 
-/* TodoList */
-ul {
-    background-color: var(--color-white);
-    width: 450px;
-
-    display: flex;
-    align-items: self-start;
-    flex-direction: column;
-}
-
-/* TodoItem */
 li {
+    width: 480px;
     margin: 15px 0 15px 15px;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
 }
 
-li.tasks-listed input  {
-    margin-left: 5px;
-    margin-right: 20px;
-}
 
-li.tasks-listed button {
-    margin-left: 300px;
-}
+
+
+
 
 
 

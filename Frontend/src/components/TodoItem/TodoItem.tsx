@@ -29,14 +29,16 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleCompletion, removeTodo,
   };
 
   return (
-    <li className='tasks-listed'>
+    <li className='flex items-center justify-between px-5'>
       <input
+        className='mr-5 '
         type="checkbox"
         checked={todo.completed}
         onChange={() => toggleCompletion(todo.id)}
       />
       {isEditing ? (
         <input
+          className='mr-5 block'
           type="text"
           value={newTitle}
           onChange={e => setNewTitle(e.target.value)}
@@ -48,7 +50,9 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleCompletion, removeTodo,
           {todo.title}
         </span>
       )}
-      <button className='remove' onClick={() => removeTodo(todo.id)}><FaX /></button>
+      <button className='ml-auto mr-5' onClick={() => removeTodo(todo.id)}>
+        <FaX />
+      </button>
     </li>
   );
 };
