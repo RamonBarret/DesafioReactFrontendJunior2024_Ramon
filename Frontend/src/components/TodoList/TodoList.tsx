@@ -16,7 +16,7 @@ interface TodoListProps {
 
 const TodoList: React.FC<TodoListProps> = ({ todos, toggleCompletion, removeTodo, editTodo }) => {
   return (
-    <ul>
+    <ul className='text-xl custom-ul-width'>
       {todos.map(todo => (
         <TodoItem
           key={todo.id}

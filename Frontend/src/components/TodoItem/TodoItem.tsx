@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import { FaX } from "react-icons/fa6";
 
 interface Todo {
@@ -18,6 +17,7 @@ interface TodoItemProps {
 const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleCompletion, removeTodo, editTodo }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [newTitle, setNewTitle] = useState(todo.title);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleDoubleClick = () => {
     setIsEditing(true);
@@ -29,9 +29,9 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleCompletion, removeTodo,
   };
 
   return (
-    <li className='flex items-center justify-between px-5'>
+    <li className='custom-li-width ml-4 my-4 flex' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
       <input
-        className='mr-5 '
+        className='mr-5'
         type="checkbox"
         checked={todo.completed}
         onChange={() => toggleCompletion(todo.id)}
@@ -46,13 +46,18 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleCompletion, removeTodo,
           autoFocus
         />
       ) : (
-        <span onDoubleClick={handleDoubleClick} style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
+        <span 
+          onDoubleClick={handleDoubleClick} 
+          className= {`inline-block transition-opacity duration-300 ${todo.completed ? 'line-through' : ''} ${todo.completed ? 'opacity-50' : ''}`}
+        >
           {todo.title}
         </span>
       )}
-      <button className='ml-auto mr-5' onClick={() => removeTodo(todo.id)}>
-        <FaX />
-      </button>
+      {isHovered && (
+        <button className='ml-auto custom-button-FaX' onClick={() => removeTodo(todo.id)}>
+          <FaX />
+        </button>
+      )}
     </li>
   );
 };
