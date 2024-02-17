@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TodoList from '../../components/TodoList/TodoList';
 import TodoFilter from '../../components/TodoFilter/TodoFilter';
+import FooterComponent from '../../components/Footer/FooterComponent';
 import { FaAngleDown } from "react-icons/fa6";
 
 interface Todo {
@@ -135,6 +136,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         )}
+        <FooterComponent />
       </div>
     </div>
   );

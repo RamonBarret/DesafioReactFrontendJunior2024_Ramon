@@ -7,23 +7,24 @@
     padding: 0;
 }
 
+/* Definindo uma configuração de width personalizada para os elementos html <input>, <ul> e <li>*/
 .custom-input-width {
     width: 500px; 
 }
-
 .custom-ul-width {
     width: 500px; 
 }
-
 .custom-li-width {
     width: 500px; 
 }
 
+/* Configurações do placeholder do input text - onde é digitado a tarefa */
 .custom-placeholder::placeholder {
     font-style: italic;
     font-size: 20px;
 }
 
+/* Configurações do ícone de excluir as tarefas criadas */
 .custom-button-FaX {
     margin-right: 30px;
     font-size: 15px;
@@ -31,6 +32,7 @@
     opacity: 30%;
 }
 
+/* Configurações do componente de Checkbox */
 li input[type="checkbox"] {
     cursor: pointer; 
     appearance: none; 
@@ -45,7 +47,6 @@ li input[type="checkbox"] {
     justify-content: center;
     opacity: 30%;
 } 
-
 li input[type="checkbox"]:before {
     content: '';
     position: absolute;
@@ -60,13 +61,23 @@ li input[type="checkbox"]:before {
     border-bottom: 2px solid #207F0B;
     transform: rotate(40deg);
 }
-
 li input[type="checkbox"]:checked::before {
     opacity: 1;
 }
 
-
-
+/* Configurações do Footer */
+footer p {
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #88898C;
+}
+footer p a {
+    color: #252526;
+    font-weight: 400;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
 
 
 
