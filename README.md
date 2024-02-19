@@ -58,26 +58,26 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 <hr>
 <br>
 
-# Teste front-end enContact - Ramon
+# Teste front-end enContact - Ramon Barreto 👨🏽‍💻
 
-## Utilizei o Vite para criar a aplicação React
+## Utilizei o Vite para criar a aplicação React 
 > Passos para rodar a aplicação:
 - [x] Direcione o caminho do seu terminal até a pasta principal do projeto: <strong>Frontend</strong>
 - [x] Instale as dependências com o comando <strong>'npm install'</strong>
 - [x] Na pasta <strong>Frontend</strong> digite o comando <strong>'npm run dev'</strong> para dar o start na aplicação (renderizar)
 
   
-### Preview da tela com as tarefas criadas 
+### Preview da tela com as tarefas criadas ✏📄
 <p align="center">
   <img alt="home" src="./Frontend/data/preview_code.PNG">
 </p>
 
-### Recuperando as tarefas iniciais via GET da URL através do Console
+### Recuperando as tarefas iniciais via GET da URL através do Console 📨
 <p align="center">
   <img alt="call_api-console" src="./Frontend/data/call_api.PNG">
 </p>
 
-## Testes 
+## Testes 🧪
 > Apenas instalei o Jest, irei continuar codando para implementar o teste de cada componente criado. (Em desnvolvimento 🏗)
 
 ## Tecnologias 🛠
