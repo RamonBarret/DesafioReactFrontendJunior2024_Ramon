@@ -153,7 +153,7 @@ const Home: React.FC = () => {
             />
           </div>
           {todos.length > 0 && (
-            <div className='bg-white flex flex-col border border-gray-200'>
+            <div className='bg-white flex flex-col border border-gray-200 pb-2'>
               <TodoList
                 todos={filteredTodos} 
                 toggleCompletion={toggleTodoCompletion}
@@ -164,7 +164,7 @@ const Home: React.FC = () => {
                 <span className='ml-2 mr-20'>{remainingTodos} item(s) left</span>
                 <TodoFilter />
                 {hasCompleted && 
-                  <button className='ml-12' onClick={ClearTaskCompleted}>Clear Completed</button>}
+                  <button className='ml-10' onClick={ClearTaskCompleted}>Clear Completed</button>}
               </div>
             </div>
           )}

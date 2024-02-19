@@ -77,6 +77,13 @@ li input[type="checkbox"]:checked::before {
     opacity: 1;
 }
 
+/* Adicione essas classes CSS para estilizar os links */
+  .active-filter {
+    padding: 4px;
+    border: solid 1px #BABBBF; 
+    border-radius: 5px;
+  }
+
 /* Configurações do Footer */
 footer p {
     margin-bottom: 5px;
