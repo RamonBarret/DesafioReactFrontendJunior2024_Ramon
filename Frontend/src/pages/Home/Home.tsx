@@ -5,6 +5,8 @@ import FooterComponent from '../../components/Footer/FooterComponent';
 import DivListFooter from '../../components/DivListFooter/DivListFooter';
 import { FaAngleDown } from "react-icons/fa6";
 
+import { useLocation } from 'react-router-dom';
+
 interface Todo {
   id: number;
   title: string;
@@ -15,6 +17,11 @@ const Home: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [inputText, setInputText] = useState<string>('');
   const [buttonOpacity, setButtonOpacity] = useState<number>(20); // Estado para controlar a opacidade do botão
+
+  const { search } = useLocation();
+  const params = new URLSearchParams(search);
+  const filter = params.get('filter');
+  
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputText(event.target.value);
@@ -100,7 +107,14 @@ const Home: React.FC = () => {
   const remainingTodos = todos.filter(todo => !todo.completed).length;
 
   // Filtra os itens com base no estado showIncomplete
-  const filteredTodos = todos;
+  const filteredTodos = todos.filter(todo => {
+    if (filter === 'active') {
+      return !todo.completed;
+    } else if (filter === 'completed') {
+      return todo.completed;
+    }
+    return true; // Se nenhum filtro estiver presente, mostrar todas as tarefas
+  });
 
   const hasCompleted = todos.some(todo => todo.completed); // Declarado aqui
 
