@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TodoList from '../../components/TodoList/TodoList';
 import TodoFilter from '../../components/TodoFilter/TodoFilter';
 import FooterComponent from '../../components/Footer/FooterComponent';
+import DivListFooter from '../../components/DivListFooter/DivListFooter';
 import { FaAngleDown } from "react-icons/fa6";
 
 interface Todo {
@@ -107,35 +108,39 @@ const Home: React.FC = () => {
     <div className='bg-gray-100 w-full h-screen flex flex-col justify-center items-center'>
       <div className='flex flex-col items-center'>
         <h1 className='font-sans font-normal text-8xl mb-5 text-red-800 opacity-80'>todos</h1>
-        <div className='relative'>
-          <button className={`absolute left-2 top-1/2 transform -translate-y-1/2 ${buttonOpacity === 100 ? '' : 'opacity-20'}`} onClick={handleToggleAllComplete}>
-            <FaAngleDown />
-          </button>
-          <input
-            className='custom-input-width h-14 pl-10 border border-gray-300 text-xl font-normal custom-placeholder'
-            type='text'
-            placeholder='What needs to be done?'
-            value={inputText}
-            onChange={handleInputChange}
-            onKeyPress={handleInputKeyPress}
-          />
-        </div>
-        {todos.length > 0 && (
-          <div className='bg-white flex flex-col item-'>
-            <TodoList
-              todos={filteredTodos} 
-              toggleCompletion={toggleTodoCompletion}
-              removeTodo={removeTodo}
-              editTodo={editTodo}
+          <div className='relative'>
+            <button className={`absolute left-2 top-1/2 transform -translate-y-1/2 ${buttonOpacity === 100 ? '' : 'opacity-20'}`} onClick={handleToggleAllComplete}>
+              <FaAngleDown />
+            </button>
+            <input
+              className='custom-input-width h-14 pl-10 border border-gray-300 text-xl font-normal custom-placeholder'
+              type='text'
+              placeholder='What needs to be done?'
+              value={inputText}
+              onChange={handleInputChange}
+              onKeyPress={handleInputKeyPress}
             />
-            <div className='flex flex-row  items-start'>
-              <span className='ml-2 mr-20'>{remainingTodos} item(s) left</span>
-              <TodoFilter />
-              {hasCompleted && 
-                <button className='ml-12' onClick={ClearTaskCompleted}>Clear Completed</button>}
-            </div>
           </div>
-        )}
+          {todos.length > 0 && (
+            <div className='bg-white flex flex-col border border-gray-200'>
+              <TodoList
+                todos={filteredTodos} 
+                toggleCompletion={toggleTodoCompletion}
+                removeTodo={removeTodo}
+                editTodo={editTodo}
+              />
+              <div className='flex flex-row  items-start'>
+                <span className='ml-2 mr-20'>{remainingTodos} item(s) left</span>
+                <TodoFilter />
+                {hasCompleted && 
+                  <button className='ml-12' onClick={ClearTaskCompleted}>Clear Completed</button>}
+              </div>
+            </div>
+          )}
+          {todos.length > 0 && (
+            <DivListFooter />
+          )}
+        
         <FooterComponent />
       </div>
     </div>

@@ -9,13 +9,25 @@
 
 /* Definindo uma configuração de width personalizada para os elementos html <input>, <ul> e <li>*/
 .custom-input-width {
-    width: 500px; 
+    width: 502px; 
 }
 .custom-ul-width {
-    width: 500px; 
+    width: 500px;
 }
 .custom-li-width {
     width: 500px; 
+}
+
+.custom-shadow_input {
+    width: 600px;
+}
+
+/* Definindo uma configuração de width personalizada para a parte so roda-pé do elemento <ul>*/
+.custom-footer-ul_line1 {
+    width: 490px;
+}
+.custom-footer-ul_line2 {
+    width: 480px;
 }
 
 /* Configurações do placeholder do input text - onde é digitado a tarefa */
@@ -78,9 +90,4 @@ footer p a {
 footer p a:hover {
     text-decoration: underline;
 }
-
-
-
-
-
 
