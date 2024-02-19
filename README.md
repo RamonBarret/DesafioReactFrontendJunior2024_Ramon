@@ -60,9 +60,10 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 
 # Teste front-end enContact
 
-## Desenvolvedor: Ramon Barreto 👨🏽‍💻
+### Desenvolvido por: Ramon Barreto 👨🏽‍💻
+<br>
 
-### Utilizei o Vite para criar a aplicação React 
+## Utilizei o Vite para criar a aplicação React 
 > Passos para rodar a aplicação:
 - [x] Direcione o caminho do seu terminal até a pasta principal do projeto: <strong>Frontend</strong>
 - [x] Instale as dependências com o comando <strong>'npm install'</strong>
