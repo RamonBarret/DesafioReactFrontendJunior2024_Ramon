@@ -48,10 +48,6 @@ O foco deste teste é a implementação de uma lista de tarefas, onde você deve
   <img alt="home" src="./Frontend/data/todos.gif">
 </p>
 
-<br>
-<hr>
-<br>
-
 ## Desafio do desafio
 
 Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafios para seu projeto, que serve como um plus no seu teste!
@@ -59,6 +55,9 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 - E se essa aplicação tiver testes?
 
 <br>
+<hr>
+<br>
+
 # Teste front-end enContact - Ramon
 
 ## Utilizei o Vite para criar a aplicação React
@@ -78,6 +77,8 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
   <img alt="call_api-console" src="./Frontend/data/call_api.PNG">
 </p>
 
+## Testes 
+> Apenas instalei o Jest, irei continuar codando para implementar o teste de cada componente criado. (Em desnvolvimento 🏗)
 
 ## Tecnologias 🛠
 - React
