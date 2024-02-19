@@ -56,7 +56,6 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 
 <br>
 <hr>
-<br>
 
 # Teste front-end enContact
 
