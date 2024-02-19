@@ -48,6 +48,9 @@ O foco deste teste é a implementação de uma lista de tarefas, onde você deve
   <img alt="home" src="./Frontend/data/todos.gif">
 </p>
 
+<br>
+<hr>
+<br>
 
 ## Desafio do desafio
 
@@ -55,7 +58,8 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 
 - E se essa aplicação tiver testes?
 
-## Teste front-end enContact - Ramon
+<br>
+# Teste front-end enContact - Ramon
 
 ## Utilizei o Vite para criar a aplicação React
 > Passos para rodar a aplicação:
