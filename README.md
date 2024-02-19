@@ -6,7 +6,10 @@ Teste para desenvolvimento front-end na enContact.
 
 Testando suas habilidades em TypeScript e folhas de estilos, nos baseamos no projeto [Todo MVC](https://todomvc.com).
 
-![Todo MVC](data/todos.png "Todo MVC")
+<p align="center">
+  <img alt="todos-project" src="./Frontend/data/todos.png">
+</p>
+
 
 Neste teste você poderá mostrar suas habilidades em gerência de estados, listas utilizando `map`, `filter`, `find`, `reduce`, API, css, entre outros.
 
@@ -41,7 +44,10 @@ O foco deste teste é a implementação de uma lista de tarefas, onde você deve
      - Ativos: Mostra apenas os ativos.
      - Completos: Mostra apenas os completos.
 
-<img src="data/todos.gif" alt="Comportamento da lista de tarefas" width="750">
+<p align="center">
+  <img alt="home" src="./Frontend/data/todos.gif">
+</p>
+
 
 ## Desafio do desafio
 
@@ -51,7 +57,7 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 
 ## Teste front-end enContact - Ramon
 
-## Utilizei o Vite para criar a aplicação React pois tenho mais conhecimentos em criar dessa maneira
+## Utilizei o Vite para criar a aplicação React
 > Passos para rodar a aplicação:
 - [x] Direcione o caminho do seu terminal até a pasta principal do projeto: <strong>Frontend</strong>
 - [x] Instale as dependências com o comando <strong>'npm install'</strong>
@@ -74,7 +80,7 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 - Axios
 - Git
 
-## Codificado por 👨🏽‍💻:
+## Desenvoledor 👨🏽‍💻
 
 - <a target="_blank" href="https://www.linkedin.com/in/ramon-barreto-medrado/">Ramon Barreto</a>
 
