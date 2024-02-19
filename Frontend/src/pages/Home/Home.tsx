@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TodoList from '../../components/TodoList/TodoList';
 import TodoFilter from '../../components/TodoFilter/TodoFilter';
 import FooterComponent from '../../components/Footer/FooterComponent';
@@ -6,6 +6,7 @@ import DivListFooter from '../../components/DivListFooter/DivListFooter';
 import { FaAngleDown } from "react-icons/fa6";
 
 import { useLocation } from 'react-router-dom';
+import axios from 'axios';
 
 interface Todo {
   id: number;
@@ -21,7 +22,23 @@ const Home: React.FC = () => {
   const { search } = useLocation();
   const params = new URLSearchParams(search);
   const filter = params.get('filter');
-  
+
+  // Chamando a Api via GET DA URL para aparecer os dados no Console
+  const getPosts = async() => {
+    try {
+      const response = await axios.get(
+        'https://my-json-server.typicode.com/EnkiGroup/DesafioReactFrontendJunior2024/todos'
+        );
+        const data = response.data
+        console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  useEffect(() => {
+    getPosts();
+  }), [];
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputText(event.target.value);
