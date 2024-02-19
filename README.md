@@ -56,10 +56,13 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 
 <br>
 <hr>
+<br>
 
 # Teste front-end enContact
 
-### Desenvolvido por: Ramon Barreto 👨🏽‍💻
+## Desenvolvedor 👨🏽‍💻
+
+- <a target="_blank" href="https://www.linkedin.com/in/ramon-barreto-medrado/">Ramon Barreto</a>
 
 ## Utilizei o Vite para criar a aplicação React 
 > Passos para rodar a aplicação:
@@ -90,11 +93,6 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 - Git
 
 
-## Desenvoledor 👨🏽‍💻
-
-- <a target="_blank" href="https://www.linkedin.com/in/ramon-barreto-medrado/">Ramon Barreto</a>
-
-
-## Contato 📲
+## Meu Contato 📲
 
 - Email: ramon_barreto_medrado@hotmail.com
