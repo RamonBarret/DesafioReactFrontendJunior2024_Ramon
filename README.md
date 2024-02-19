@@ -61,7 +61,6 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 # Teste front-end enContact
 
 ### Desenvolvido por: Ramon Barreto 👨🏽‍💻
-<br>
 
 ## Utilizei o Vite para criar a aplicação React 
 > Passos para rodar a aplicação:
@@ -75,22 +74,27 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
   <img alt="home" src="./Frontend/data/preview_code.PNG">
 </p>
 
+
 ### Recuperando as tarefas iniciais via GET da URL através do Console 📨
 <p align="center">
   <img alt="call_api-console" src="./Frontend/data/call_api.PNG">
 </p>
 
+
 ## Testes 🧪
 > Apenas instalei o Jest, irei continuar codando para implementar o teste de cada componente criado. (Testes em desnvolvimento 🏗)
+
 
 ## Tecnologias 🛠
 - React
 - Axios
 - Git
 
+
 ## Desenvoledor 👨🏽‍💻
 
 - <a target="_blank" href="https://www.linkedin.com/in/ramon-barreto-medrado/">Ramon Barreto</a>
+
 
 ## Contato 📲
 
