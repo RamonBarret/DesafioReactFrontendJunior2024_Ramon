@@ -83,19 +83,21 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 <p align="center">
   <img alt="filter_all" src="./Frontend/data/filter_all.PNG">
 </p>
+<br>
 
 #### Selecionando o Filtro 'Active'
 > Para trazer as tarefas que foram criadas, mas que ainda não foram concluídas/checadas 📝⏳
 <p align="center">
   <img alt="filter_active" src="./Frontend/data/filter_active.PNG">
 </p>
+<br>
 
 #### Selecionando o Filtro 'Completed'
 > Para trazer as tarefas que já foram concluídas/checadas 📝✔
 <p align="center">
   <img alt="filter_completed" src="./Frontend/data/filter_completed.PNG">
 </p>
-
+<br>
 
 ### Recuperando as tarefas iniciais via GET da URL através do Console 📨
 <p align="center">
