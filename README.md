@@ -71,12 +71,13 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 - [x] Na pasta <strong>Frontend</strong> digite o comando <strong>'npm run dev'</strong> para dar o start na aplicação (renderizar)
 
   
-### Preview da tela com as tarefas criadas 📄✏
-> Preview inicial da aplicação
+### Preview inicial da aplicação 📖
+> 
 <p align="center">
   <img alt="filter_all" src="./Frontend/data/initial-preview.PNG">
 </p>
 
+### Preview da tela com as tarefas criadas 📄✏
 
 > Filtro 'All' por dafault (padrão), trazendo todas as tarefas criadas. 📝
 <p align="center">
