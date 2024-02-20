@@ -79,17 +79,17 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 
 ### Preview da tela com as tarefas criadas 📄✏
 
-> Filtro 'All' por dafault (padrão), trazendo todas as tarefas criadas. 📝
+#### Filtro 'All' por dafault (padrão), trazendo todas as tarefas criadas. 📝
 <p align="center">
   <img alt="filter_all" src="./Frontend/data/filter_all.PNG">
 </p>
 
-> Selecionando o Filtro 'Active', para trazer as tarefas que foram criadas, mas que ainda não foram concluídas/checadas. 📝⏳
+#### Selecionando o Filtro 'Active', para trazer as tarefas que foram criadas, mas que ainda não foram concluídas/checadas. 📝⏳
 p align="center">
   <img alt="filter_active" src="./Frontend/data/filter_active.PNG">
 </p>
 
-> Selecionando o Filtro 'Completed', para trazer as tarefas que já foram concluídas/checadas. 📝✔
+#### Selecionando o Filtro 'Completed', para trazer as tarefas que já foram concluídas/checadas. 📝✔
 <p align="center">
   <img alt="filter_completed" src="./Frontend/data/filter_completed.PNG">
 </p>
