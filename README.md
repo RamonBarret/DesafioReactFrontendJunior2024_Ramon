@@ -71,25 +71,27 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 - [x] Na pasta <strong>Frontend</strong> digite o comando <strong>'npm run dev'</strong> para dar o start na aplicação (renderizar)
 
   
-### Preview inicial da aplicação 📖
-> 
+### Preview inicial da aplicação 📖 
 <p align="center">
   <img alt="filter_all" src="./Frontend/data/initial-preview.PNG">
 </p>
 
 ### Preview da tela com as tarefas criadas 📄✏
 
-#### Filtro 'All' por dafault (padrão), trazendo todas as tarefas criadas. 📝
+#### Filtro 'All' por dafault (padrão)
+> Filtro 'All' por dafault (padrão), trazendo todas as tarefas criadas 📝
 <p align="center">
   <img alt="filter_all" src="./Frontend/data/filter_all.PNG">
 </p>
 
-#### Selecionando o Filtro 'Active', para trazer as tarefas que foram criadas, mas que ainda não foram concluídas/checadas. 📝⏳
-p align="center">
+#### Selecionando o Filtro 'Active'
+> Selecionando o Filtro 'Active', para trazer as tarefas que foram criadas, mas que ainda não foram concluídas/checadas 📝⏳
+<p align="center">
   <img alt="filter_active" src="./Frontend/data/filter_active.PNG">
 </p>
 
-#### Selecionando o Filtro 'Completed', para trazer as tarefas que já foram concluídas/checadas. 📝✔
+#### Selecionando o Filtro 'Completed'
+> Selecionando o Filtro 'Completed', para trazer as tarefas que já foram concluídas/checadas 📝✔
 <p align="center">
   <img alt="filter_completed" src="./Frontend/data/filter_completed.PNG">
 </p>
