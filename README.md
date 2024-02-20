@@ -88,7 +88,7 @@ Tem um tempinho a mais? Acha que pode fazer mais? Então aqui vai alguns desafio
 #### Selecionando o Filtro 'Active'
 > Para trazer as tarefas que foram criadas, mas que ainda não foram concluídas/checadas 📝⏳
 <p align="center">
-  <img alt="filter_active" src="./Frontend/data/filter_active.PNG">
+  <img alt="filter_active" src="./Frontend/data/filter_active.PNG " width="700px">
 </p>
 <br>
 
